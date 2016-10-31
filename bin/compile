@@ -27,5 +27,7 @@ while read url; do
     fi
 
     curl -L --silent $url | tar x $flag
+    echo `pwd`
+    ls -laR
   fi
 done < .vendor_urls
